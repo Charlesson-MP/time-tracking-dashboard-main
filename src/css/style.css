@@ -42,7 +42,7 @@ body {
     background-color: var(--navy-900);
     border-radius: 1rem;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .userInfo {
@@ -95,6 +95,11 @@ body {
 }
 
 /* cards settings */
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .cardContainer {
     background-repeat: no-repeat;
     background-position: top -.5rem right 1.2rem;
@@ -103,33 +108,33 @@ body {
     overflow: hidden;
 }
 
-.workCard {
+.work {
     background-color: var(--orange-300);
     background-image: url('../images/icon-work.svg');
 }
 
-.playCard {
+.play {
     background-color: var(--blue-300);
     background-image: url('../images/icon-play.svg');
 }
 
-.studyCard {
+.study {
     background-color: var(--pink-400);
     background-image: url('../images/icon-study.svg');
 }
 
-.exerciseCard {
+.exercise {
     background-color: var(--green-400);
     background-image: url('../images/icon-exercise.svg');
     background-position: top right 1.2rem;
 }
 
-.socialCard {
+.social {
     background-color: var(--purple-700);
     background-image: url('../images/icon-social.svg');
 }
 
-.safeCareCard {
+.selfcare {
     background-color: var(--yellow-300);
     background-image: url('../images/icon-self-care.svg');
 }

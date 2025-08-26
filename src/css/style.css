@@ -1,0 +1,172 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* variables */
+:root {
+    /* primary colors */
+    --purple-600: hsl(246, 80%, 60%);
+    --orange-300: hsl(15, 100%, 70%);
+    --blue-300: hsl(195, 74%, 62%);
+    --pink-400: hsl(348, 100%, 68%);
+    --green-400: hsl(145, 58%, 55%);
+    --purple-700: hsl(264, 64%, 52%);
+    --yellow-300: hsl(43, 84%, 65%);
+
+    /* neutral colors */
+    --navy-950: hsl(226, 43%, 10%);
+    --navy-900: hsl(235, 46%, 20%);
+    --purple-500: hsl(235, 45%, 61%);
+    --navy-200: hsl(236, 100%, 87%);
+
+    /* font */
+    --rubik: "Rubik", sans-serif;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body settings */
+body {
+    min-height: 100vh;
+    font-family: var(--rubik);
+    padding: 4rem 1.8rem;
+    background-color: var(--navy-950);
+}
+
+/* user panel settings */
+.userContainer {
+    background-color: var(--navy-900);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.userInfo {
+    display: flex;
+    color: white;
+    background-color: var(--purple-600);
+    padding: 1.8rem;
+    border-radius: 1rem;
+}
+
+.title {
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title p {
+    font-weight: 100;
+    font-weight: .9rem;
+    color: var(--navy-200);
+}
+
+.title h1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.userContainer img {
+    width: 4.5rem;
+    border: .2rem solid white;
+    border-radius: 50%;
+}
+
+.options {
+    padding: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--purple-500);
+}
+
+.options .selected-button {
+    color: white;
+}
+
+/* cards settings */
+.cardContainer {
+    background-repeat: no-repeat;
+    background-position: top -.5rem right 1.2rem;
+    background-size: 3.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.workCard {
+    background-color: var(--orange-300);
+    background-image: url('../images/icon-work.svg');
+}
+
+.playCard {
+    background-color: var(--blue-300);
+    background-image: url('../images/icon-play.svg');
+}
+
+.studyCard {
+    background-color: var(--pink-400);
+    background-image: url('../images/icon-study.svg');
+}
+
+.exerciseCard {
+    background-color: var(--green-400);
+    background-image: url('../images/icon-exercise.svg');
+    background-position: top right 1.2rem;
+}
+
+.socialCard {
+    background-color: var(--purple-700);
+    background-image: url('../images/icon-social.svg');
+}
+
+.safeCareCard {
+    background-color: var(--yellow-300);
+    background-image: url('../images/icon-self-care.svg');
+}
+
+.cardContent {
+    background-color: var(--navy-900);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    color: white;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cardHeader h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardFooter .time {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.cardFooter .lastRecord {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--purple-500);
+}

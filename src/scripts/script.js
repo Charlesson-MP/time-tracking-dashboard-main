@@ -4,7 +4,7 @@ const cardsContainer = document.querySelector('.cardsContainer');
 
 // request data
 async function populate() {
-    const requestURL = '../../data.json';
+    const requestURL = './data.json';
 
     const request = new Request(requestURL);
 
@@ -65,7 +65,7 @@ function populateCardsDaily(data) {
         h2.textContent = d.title;
         
         const img = document.createElement('img');
-        img.setAttribute('src', '/src/images/icon-ellipsis.svg');
+        img.setAttribute('src', './src/images/icon-ellipsis.svg');
         img.setAttribute('alt', 'Options icon');
 
         cardHeader.append(h2, img);
@@ -112,7 +112,7 @@ function populateCardsWeekly(data) {
         h2.textContent = d.title;
         
         const img = document.createElement('img');
-        img.setAttribute('src', '/src/images/icon-ellipsis.svg');
+        img.setAttribute('src', './src/images/icon-ellipsis.svg');
         img.setAttribute('alt', 'Options icon');
 
         cardHeader.append(h2, img);
@@ -159,7 +159,7 @@ function populateCardsMonthly(data) {
         h2.textContent = d.title;
         
         const img = document.createElement('img');
-        img.setAttribute('src', '/src/images/icon-ellipsis.svg');
+        img.setAttribute('src', './src/images/icon-ellipsis.svg');
         img.setAttribute('alt', 'Options icon');
 
         cardHeader.append(h2, img);

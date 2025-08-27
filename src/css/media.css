@@ -50,6 +50,14 @@
         gap: 1rem;
     }
 
+    .options button {
+        cursor: pointer;
+    }
+
+    .options button:hover {
+        color: white;
+    }
+
     /* cards settings */
     .cardContainer {
         flex: 1 30%;
@@ -57,6 +65,11 @@
 
     .cardContent {
         padding: 1.5rem;
+        cursor: pointer;
+    }
+
+    .cardContent:hover {
+        background-color: #34397b;
     }
 
     .cardFooter {

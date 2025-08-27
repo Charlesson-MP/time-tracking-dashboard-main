@@ -40,8 +40,6 @@ function populateCards(data) {
     });
 }
 
-populate();
-
 function populateCardsDaily(data) {
     if(cardsContainer.innerHTML !== "") {
         const cards = [...cardsContainer.children];
@@ -190,3 +188,5 @@ function changeSelectedOption(btns, target) {
 
     target.classList.add('selected-button');
 }
+
+populate();

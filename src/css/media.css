@@ -66,6 +66,7 @@
     .cardContent {
         padding: 1.5rem;
         cursor: pointer;
+        height: 100%;
     }
 
     .cardContent:hover {

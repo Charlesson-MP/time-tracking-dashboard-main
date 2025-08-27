@@ -1,0 +1,71 @@
+@media screen and (min-width: 48rem) {
+    /* cards settings */
+    .cardsContainer {
+        flex-flow: row wrap;
+    }
+
+    .cardContainer {
+        flex: 1 1 40%;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    /* body settings */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* main settings */
+    main {
+        display: flex;
+        gap: 1.5rem;
+        width: 62.5rem;
+    }
+
+    /* user panel settings */
+    .userContainer {
+        margin-bottom: 0;
+        flex: 0 0 25%;
+    }
+
+    .userInfo {
+        flex-direction: column;
+        gap: 2rem;
+        height: 65%;
+    }
+
+    .userInfo .title {
+        margin-left: 0;
+    }
+    
+    .userInfo h1 {
+        font-size: 2rem;
+    }
+    
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* cards settings */
+    .cardContainer {
+        flex: 1 30%;
+    }
+
+    .cardContent {
+        padding: 1.5rem;
+    }
+
+    .cardFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    .cardFooter .time {
+        font-size: 3rem;
+    }
+}
